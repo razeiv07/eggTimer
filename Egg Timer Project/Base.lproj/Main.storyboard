@@ -49,6 +49,9 @@
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Soft"/>
+                                                        <connections>
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLi-xy-e2C"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -73,6 +76,9 @@
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Medium"/>
+                                                        <connections>
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HoG-Yv-44i"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -97,6 +103,9 @@
                                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Hard"/>
+                                                        <connections>
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8fz-C7-xqy"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -116,12 +125,6 @@
                                         <rect key="frame" x="0.0" y="532" width="353" height="227"/>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="8jH-sD-Ooa" firstAttribute="top" secondItem="T6t-sw-GK7" secondAttribute="bottom" constant="39" id="6GA-eO-IPM"/>
-                                    <constraint firstAttribute="trailing" secondItem="8jH-sD-Ooa" secondAttribute="trailing" id="SO7-9u-2bb"/>
-                                    <constraint firstItem="967-uQ-9KE" firstAttribute="top" secondItem="8jH-sD-Ooa" secondAttribute="bottom" constant="39" id="mb1-wb-y1c"/>
-                                    <constraint firstItem="8jH-sD-Ooa" firstAttribute="leading" secondItem="SdN-WN-qsS" secondAttribute="leading" id="yvi-wf-d9P"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
