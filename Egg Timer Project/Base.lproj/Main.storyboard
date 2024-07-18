@@ -136,6 +136,9 @@
                             <constraint firstItem="SdN-WN-qsS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XM8-wO-Plu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="W2t-b5-DKn" id="lUG-hh-Gqu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
