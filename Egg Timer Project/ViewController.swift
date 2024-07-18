@@ -9,15 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let eggTimes : [String: Int] = ["Soft": 5, "Medium": 7, "Hard": 12]
+    let eggTimes : [String: Int] = ["Soft": 300, "Medium": 420, "Hard": 720]
+    
+    var secondsRemaining = 60
 //    let softTime = 5
 //    let mediumTime = 7
 //    let hardTime = 12
 
     @IBAction func hardnessSelected(_ sender: UIButton) {
         
-        let hardness = sender.currentTitle
+        let hardness = sender.currentTitle!
         
+        //using if/else
 //        if hardness == "Soft" {
 //            print(softTime)
 //        } else if hardness == "Medium" {
@@ -26,15 +29,28 @@ class ViewController: UIViewController {
 //            print(hardTime)
 //        }
         
-        switch hardness {
-        case "Soft":
-            print(eggTimes["Soft"])
-        case "Medium":
-            print(eggTimes["Medium"])
-        case "Hard":
-            print(eggTimes["Hard"])
-        default:
-            print("Error")
+        //using swutch case
+//        switch hardness {
+//        case "Soft":
+//            print(eggTimes[hardness])
+//        case "Medium":
+//            print(eggTimes[hardness])
+//        case "Hard":
+//            print(eggTimes[hardness])
+//        default:
+//            print("Error")
+//        }
+        
+        //using optional binding to get the time which will decrease each second depending on the hardness level
+        secondsRemaining = eggTimes[hardness]!
+        
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateTimer() {
+        if secondsRemaining > 0{
+            print("\(secondsRemaining) seconds.")
+            secondsRemaining -= 1
         }
     }
 }
